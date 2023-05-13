@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Flipkart Vendor Form</h1>
+    <form action="#" method="post">
+        <div>
+            <div>
+                <label for="name">Name:</label> 
+            </div>
+            <input type="text" name="name" id="name" placeholder="First Name">
+            <input type="text" name="name" id="name" placeholder="Surname">
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label> <br>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <div>
+            <label for="curr-location">Current Location:</label> <br>
+            <textarea name="curr-location" id="curr-location" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="email">Email:</label> <br>
+            <input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" value="suman@gmail.com" name="email" id="email">
+        </div>
+        <div>
+            <label for="adhar">Upload Aadhar Card:</label>
+            <input type="file" name="adhar" id="adhar">
+        </div>
+        <div>
+            <label for="pan">Pan Card:</label>
+            <input type="tel" name="pan" id="pan" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
+        </div>
+        <div>
+            <label for="items">Items to sell:</label>
+            <select name="items" id="items">
+                <option value="Items to sell" disabled selected>Items to sell</option>
+                <option value="shoes">Shoes</option>
+                <option value="clothes">Clothes</option>
+                <option value="watches">Watches</option>
+            </select>
+        </div>
+        <div>
+            <label for="question">Are you in India?</label>
+            <input type="radio" name="question">Yes
+            <input type="radio" name="question">NO
+        
+        </div>
+        <div>
+            <label for="delivery-location">Open to deliver in locations:</label>
+            <input type="checkbox" name="delivery-location">Delhi
+             <input type="checkbox" name="delivery-location">Bangalore
+              <input type="checkbox" name="delivery-location">Mumbai
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+
+
+    </form>
+    
+</body>
+</html>

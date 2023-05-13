@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- defines the action which is going to be performed on form submission.
+    You add a file path in this action, this file contains tha server-side(backend)
+    code which handles your form data. -->
+    <form method="post" action="file.js" name="form" id="form">
+        <div>
+            <label for="fname">Name*:</label> <br>
+            <input type="text" name="fname" id="fname" value="Suman" size="10" maxlength="10" placeholder="enter your name" required>
+        </div>
+        <div>
+            <label for="eveName">Name of the event:</label> <br>
+            <input type="text" name="eveName" id="eveName" value="JS Fest" readonly disabled>
+        </div>
+        <div>
+            <label for="age">Age:</label> <br>
+            <input type="number"  max="1000"  name="age" id="age" required>
+        </div>
+        <div>
+            <label for="email">Email:</label> <br>
+            <input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" value="suman@gmail.com" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Create a password:</label> <br>
+            <input type="password" name="password" maxlength="5" id="password">
+        </div>
+
+        <div>
+            <label for="phoneNo">Contact Number:</label> <br>
+            <input type="tel" value="6666656788" max="10" pattern="/^(0|91)?[6-9][0-9]{9}$/" name="phoneNo" id="phoneNo">
+        </div>
+
+        <div>
+            <label for="gender">Gender:</label> <br>
+            <input type="radio" value="male" name="gender"> Male <br>
+            <input type="radio" value="female" name="gender"> Female
+        </div>
+        <div>
+            <label for="skills">Your skills:</label> <br>
+            HTML: <input type="checkbox" name="skills" value="html"> 
+            CSS: <input type="checkbox" name="skills" value="css">
+            JS: <input type="checkbox" name="skills" value="js">   
+        </div>
+        <div>
+            <label for="time">Preffered time for meetup:</label>
+            <input type="date" min="2023-04-10" max="2023-05-12">
+        </div>
+        <div>
+            <label for="topics">Choose topic for the meetup:</label>
+            <select name="topics">
+                <option value="HTML-Tags">HTML Tags</option>
+                <option value="css">CSS</option>
+                <option value="js">Javacript</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="msg">Any questions?</label>
+            <textarea name="msg" id="msg" cols="30" rows="2" placeholder="enter you msg"></textarea>
+        </div>
+
+        <div>
+            <input type="submit">
+            <input type="reset" disabled>
+        </div>
+
+        <!-- <div>
+            <label for="extra-input">Extra Input Types</label>
+            <input type="color"> <br>
+            <input type="date"> <br>
+            <input type="month"> <br>
+            <input type="week"> <br>
+            <input type="file"> <br>
+            <input type="image" src="../assets/web.jpg" width="100px"> <br>
+            <input type="url"> <br>
+            <input type="range"> <br>
+            <input type="hidden">
+            <input type="button" value="Submit">
+            <button>Submit</button>
+            <input type="search">
+
+        </div> -->
+    </form>
+    
+</body>
+</html>
