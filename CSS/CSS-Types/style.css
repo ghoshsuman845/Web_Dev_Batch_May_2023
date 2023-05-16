@@ -1,0 +1,18 @@
+h1{
+    color: green;
+    color: pink;
+    border: 1px solid lightgreen;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: pink;
+    padding: 10px;
+    margin: auto;
+    color: blue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+}
