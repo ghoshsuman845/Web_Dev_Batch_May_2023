@@ -1,0 +1,62 @@
+/* :link - selects the unvisited links */
+a{
+    color: pink;
+}
+
+.anchor{
+    color: red;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:active{
+    color: green;
+}
+
+a:hover{
+    color: coral;
+}
+
+.btn{
+    background-color: rgb(110, 87, 223);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 60px;
+    font-weight: 800;
+}
+
+.btn:hover{
+     color: rgb(110, 87, 223);
+     border: 1px solid rgb(110, 87, 223);
+     background-color: white;
+     cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    background-color: lightcyan;
+}
+
+p:first-child{
+    color: crimson;
+}
+
+p:last-child{
+    color: plum;
+}
+
+/* even list items */
+li:nth-child(2n){
+    color: lightgreen
+}
+
+/* odd list items */
+li:nth-child(3n){
+    color: lightseagreen
+}
