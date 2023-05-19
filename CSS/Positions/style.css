@@ -1,0 +1,39 @@
+.parent{
+    position: relative;
+
+}
+
+.child{
+
+}
+
+.child-one{
+    position: relative;
+    top: 10px;
+}
+
+.child-two{
+    position: absolute;
+    top: 20px;
+}
+
+.child-three{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.navbar{
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .parent{
+            height: 200vh;
+            background-color: pink;
+            padding: 30px;
+        }
+
+        .child{
+            padding: 30px;
+            border: 1px solid black;
+            color: white;
+        }
+
+        .child-one {
+            background-color: lightskyblue;
+        }
+
+        .child-two{
+            background-color: violet;
+        }
+
+        .child-three{
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Positions in CSS</h1>
+    <ol>
+        <li>Static: the original or default position of an element.</li>
+        <li>Relative: Element is positioned relative to it's original/normal position.
+            Same as static positioning, just that here we can move
+            the element by adding offset values.
+            Element stays in the normal document flow.
+        </li>
+        <li>
+            Absolute: Element is positioned relative to it's parent. 
+            If parent is not present then element is positioned relative to the 
+            main document.
+            Element is removed from the normal document flow, no space is created
+            for the element.
+        </li>
+        <li>
+            Fixed: Element is always positioned relative to the viewport.
+            Element always stays in the same position even on scrolling.
+            Element is removed from normal document flow.
+        </li>
+        <li>
+            Sticky: Element is positioned according to the normal document flow.
+            Till the elemnt hits the top, it has normal position, after it
+            touches the top it's position becomes fixed.
+        </li>
+    </ol>
+
+    <div class="parent">
+        Parent
+        <div class="child child-one">One</div>
+        <div class="child child-two">Two</div>
+        <div class="child child-three">Three</div>
+
+        <nav class="child navbar">
+            <a href="#">home</a>
+            <a href="#">home</a>
+            <a href="#">home</a>
+            <a href="#">home</a>
+            <a href="#">home</a>
+        </nav>
+    </div>
+    
+</body>
+</html>
