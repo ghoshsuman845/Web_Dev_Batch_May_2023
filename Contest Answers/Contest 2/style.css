@@ -93,14 +93,14 @@ html{
     background-color: rgb(218, 237, 243);
 }
 
-.submit-btn{
+#submit-btn{
     background-color: #000;
     color: #fff;
-    height: 40px!important;
-    width: 102%!important;
+    height: 40px;
+    width: 102%;
 }
 
-.submit-btn:hover{
+#submit-btn:hover{
     background-color: white;
     color: black;
     cursor: pointer;
