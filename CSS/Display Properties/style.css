@@ -1,0 +1,11 @@
+div{
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+div:hover{
+    display: none;
+}
