@@ -1,0 +1,25 @@
+.container{
+    background-color: lightblue;
+    height: 400px;
+    display: flex;
+    /* flex-direction: row, column, row-reverse, column-reverse; */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap, wrap, wrap-reverse; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap-reverse;
+    /* justify-content: start, end, center, space-around, space-between, space-evenly; */
+    justify-content: stretch;
+    /* align-items: stretch, flex-start, flex-end, center; */
+    /* align-items: center; */
+    /* align-content: flex-start, flex-end, center, stretch, space-between, space-around, space-evenly; */
+    align-content: flex-start;
+    /* gap: row-gap col-gap; */
+    gap: 50px 10px;
+}
+
+.container .item{
+    background-color: rgb(50, 75, 243);
+    margin: 10px 10px;
+    color: white;
+    width: 20%;
+}
