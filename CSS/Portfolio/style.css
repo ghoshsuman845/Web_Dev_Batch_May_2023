@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* width: 100%; */
+    height: 65px;
+    padding: 0px 40px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.logo img{
+    width: 30%;
+}
+
+.navbar .content{
+    display: flex;
+    column-gap: 50px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #7bb1ff;
+}
+
+/* home section */
+.container{
+    position: relative;
+    top: 65px;
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+}
+
+.home-container .img, .home-container .home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.home-content h1{
+    font-size: 40px;
+    line-height: 80px;
+
+}
+
+.home-content span{
+    color: #7bb1ff;
+}
+
+
+.home-container .img img{
+    width: 80%;
+}
+
+/* about container */
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 4% 0px;
+    background-color: #bed8ff;
+}
+
+.about-container .frame, .about-container .about-content{
+    width: 40%;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* skills section */
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 0px;
+}
+
+.skill-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 2% 0px;
+    flex-wrap: wrap;
+    gap: 25px 1px;
+}
+
+.skill-items .item{
+    border: 1px solid #bed8ff;
+    padding: 10px 24px;
+    color: #007cff;
+    border-radius: 8px;
+    border-bottom: 5px solid #007cff;
+    width: 20%;
+}
+
+/* projects section */
+.projects{
+    padding: 4% 0px;
+}
+
+.projects h1{
+    text-align: center;
+}
+.projects .container{
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    justify-content: center;
+    gap: 35px;
+
+}
+
+.projects .card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px 30px;
+}
+
+.card .content .desc{
+    font-size: 12px;
+    color: #adaaaa;
+}
+
+.card .content a{
+    font-size: 12px;
+    color: #007cff;
+}
+
+.project-img img{
+    width: 80%;
+}
+
+/* Mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .navbar{
+        justify-content: start;
+        align-items: center;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    .logo img{
+        width: 45%;
+    }
+
+    .nav-items a{
+        font-size: 12px;
+    }
+
+    .navbar .content{
+        column-gap: 10px;
+    }
+
+    .home-container{
+        flex-direction: column;
+    }
+    .home-container .img, .home-container .home-content {
+        width: 100%;
+        padding: 28px;
+    }
+
+    .home-content h1{
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .home-container .img img {
+        width: 100%;
+    }
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-container .frame, .about-container .about-content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+
+    .frame iframe{
+        width: max-content;
+        height: 165px;
+    }
+
+    .skill-items {
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        gap: 19px 1px;
+    }
+
+    .skill-items .item{
+        width: 80%;
+    }
+
+    .projects .container {
+        grid-template-columns: repeat(1, 80%);
+        gap: 10px;
+    }
+    
+}

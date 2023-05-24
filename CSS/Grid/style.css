@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    height: 400px;
+    background-color: pink;
+    display: grid;
+    /* helps in adding the columns */
+    grid-template-columns: repeat(4,10%);
+    grid-template-rows: repeat(2, 20%) ;
+    /* column-gap: 20px;
+    row-gap: 10px; */
+    gap: 10px 20px;
+    /* justify-items: start, end, center, stretch; */
+    /* justify-items: stretch; */
+    /* align-items: stretch, start, end, center; */
+    /* align-items: stretch; */
+    /* place-items: align-items justify-items; */
+    /* place-items: center center; */
+    justify-content: start;
+    align-content: stretch;
+    /* place-content: align-content justify-content; */
+}
+
+.container .item{
+    background-color: purple;
+    
+}
+
+.item-1{
+    justify-self: center;
+    align-self: center;
+    /* place-self: align-self justify-self; */
+}
