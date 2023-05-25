@@ -1,0 +1,165 @@
+div{
+    width: 100px;
+    height: 100px;
+}
+
+.trans{
+   
+    /* transition-property: width, height, background-color;
+    transition-duration: 5s;
+    transition-timing-function: ease-in ;
+    transition-delay: 2s; */
+    transition: width 5s ease-in 2s, height 5s ease-in 2s, background-color 5s ease-in 2s ;
+    
+    
+}
+
+.trans:hover{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+}
+
+input{
+    border: 2px solid lightblue;
+    width: 50%;
+    height: 40px;
+    transition-property: outline;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+input:focus{
+    outline: 5px solid blue;
+}
+
+/* Animations example */
+
+.anime{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    animation-name: color-change;
+    animation-duration: 10s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    /* animation-direction: normal, reverse, alternate, alternate-reverse; */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes color-change{
+    0%{
+       background-color: lightblue;
+       background-size: cover;
+       rotate: 45deg;
+       transform: scale(1);
+    }
+    25%{
+        background-color: darkblue;
+        rotate: 90deg;
+        transform: scale(2);
+    }
+    50%{
+        background-color: blueviolet;
+        rotate: 180deg;
+        transform: scale(3);
+    }
+    100%{
+        background-color: purple;
+        rotate: 360deg;
+        transform: scale(4);
+    }
+}
+
+.anime p {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name:no-anime ;
+}
+
+@keyframes no-anime {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 0deg;
+    }
+}
+
+/* Transform */
+/* translate: moves an element from its current position */
+.translate{
+    background-color: red;
+    transform: translate(50px, 100px);
+}
+
+.rotate{
+    background-color: lightgreen;
+    transform: rotate(45deg);
+}
+
+/* scale: increases or decreases the size */
+.scale{
+    background-color: coral;
+    transform: scale(2, 2);
+}
+
+.skew{
+    background-color: palevioletred;
+    transform: skew(20deg);
+}
+
+.matrix{
+    /* transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()); */
+}
+
+.train{
+    width: 100%;
+}
+
+.train img{
+    width: 20%;
+    animation-name: run;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.container{
+    display: inline;
+}
+.container img{
+    width: 10%;
+    position: relative;
+    top: 7px;
+    animation-name: run;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes run{
+    0%{
+        transform: translateX(100px);
+    }
+    25%{
+        transform: translateX(500px);
+    }
+    50%{
+        transform: translateX(700px);
+    }
+    75%{
+        transform: translateX(900px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+
+}
