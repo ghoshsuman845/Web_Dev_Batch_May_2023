@@ -1,0 +1,46 @@
+.accordion-item{
+    border: none;
+    margin: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.accordion-header{
+    padding: 20px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: white;
+    color: lightblue;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.accordion-button:focus{
+    border-color: white;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25);
+}
+
+.accordion-body{
+    padding:20px 40px;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image:  url('./images/up-chevron.png');
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 3%;
+    opacity: 1;
+    background-color: #000;
+    top: 55px;
+    height: 52%;
+}
+
+.modal-content{
+    border-radius: 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.modal-header{
+    border-bottom: 0px;
+}
