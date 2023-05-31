@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Bootcamp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-lg-5 text-info" href="#">Frontend Bootcamp</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end mx-5"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav px-5">
+            <a class="nav-link text-info" aria-current="page" href="#"
+              >What you'll learn</a
+            >
+            <a class="nav-link text-info" href="#">FAQs</a>
+            <a class="nav-link text-info" href="#">Instructors</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner section -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/pexels-tranmautritam-251225.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/pexels-lukas-574071.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/pexels-designecologist-1779487.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About us section -->
+    <div class="container about-us text-sm-center text-md-start text-center" data-aos="fade-left">
+        <div class="row">
+            <div class="col-lg-6 col-12 col-sm-12 d-flex flex-column justify-content-center">
+                <h1 class="py-3">Become a <span>Web Developer</span></h1>
+                <p class="fw-medium fs-5">We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role</p>
+                <button type="button" class="btn text-light w-25 py-2 my-3 fw-medium">Enroll Now</button>
+            </div>
+            <div class="col-lg-6 col-12 col-sm-12">
+                <img class="img-fluid" src="./images/building.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 newsletter text-sm-center text-md-start text-center">
+        <div class="row">
+            <div class="col-lg-6 col-12 col-sm-12 d-flex flex-column justify-content-center">
+                <h1 class="text-light fs-3">Sign Up For Our Newsletter</h1>
+            </div>
+            <div class="col-lg-6 col-12 col-sm-12">
+                <form action="">
+                    <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="add your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-dark" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row py-5">
+            <div class="col">
+                <h1 class="text-center">Our Instructors</h1>
+                <p class="text-center">Our instructors all have 5+ years working as a web developer in the industry</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="card">
+                    <div class="card-body my-5 text-center">
+                        <img src="./images/user.jpg" class="card-img-top img-fluid rounded-circle w-50 mb-5" alt="...">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.</p>
+                        <div class="icons d-flex justify-content-evenly">
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-6 col-sm-12 col-12">
+                 <div class="card">
+                    <div class="card-body my-5 text-center">
+                        <img src="./images/user.jpg" class="card-img-top img-fluid rounded-circle w-50 mb-5" alt="...">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.</p>
+                        <div class="icons d-flex justify-content-evenly">
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-6 col-sm-12 col-12">
+                 <div class="card">
+                    <div class="card-body my-5 text-center">
+                        <img src="./images/user.jpg" class="card-img-top img-fluid rounded-circle w-50 mb-5" alt="...">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.</p>
+                        <div class="icons d-flex justify-content-evenly">
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-6 col-sm-12 col-12">
+                 <div class="card">
+                    <div class="card-body my-5 text-center">
+                        <img src="./images/user.jpg" class="card-img-top img-fluid rounded-circle w-50 mb-5" alt="...">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.</p>
+                        <div class="icons d-flex justify-content-evenly">
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+  </body>
+</html>
